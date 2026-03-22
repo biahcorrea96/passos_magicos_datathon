@@ -616,17 +616,6 @@ if page == "Informações do Sistema":
         </div>
         """, unsafe_allow_html=True)
     
-    # Dashboard
-    st.markdown("### 📈 Dashboard")
-    st.markdown("""
-    <div class="dashboard-section">
-    <h3>Acesse o Dashboard de Monitoramento</h3>
-    <p>Para visualizar dados em tempo real, acompanhar tendências e gerar relatórios, acesse:</p>
-    <p><strong><a href="https://seu-dashboard-url.com" target="_blank">🔗 Dashboard Passos Mágicos</a></strong></p>
-    <p style="font-size: 0.9rem; color: #666;">Nota: Substitua a URL acima pela URL real do seu dashboard</p>
-    </div>
-    """, unsafe_allow_html=True)
-    
     # Desenvolvedores
     st.markdown("### 👥 Desenvolvedores")
     st.markdown("""
