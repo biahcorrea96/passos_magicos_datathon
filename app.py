@@ -585,6 +585,7 @@ if page == "Informações do Sistema":
         <p>Base 2024</p>
         </div>
         """, unsafe_allow_html=True)
+    st.dataframe(indicators_data, use_container_width=True, hide_index=True)
     
     # Características do Modelo
     st.markdown("### Características do Modelo (XGBoost)")
