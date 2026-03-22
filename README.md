@@ -1,12 +1,12 @@
-# 📊 Passos Mágicos - Modelo Preditivo de Risco de Defasagem Escolar
+# Passos Mágicos - Modelo Preditivo de Risco de Defasagem Escolar
 
 Aplicação desenvolvida para o **Tech Challenge Fase 5** da Pós-Graduação em Data Analytics da FIAP, em parceria com a **Associação Passos Mágicos**.
 
-## 🎯 Objetivo
+## Objetivo
 
 Desenvolver um **modelo preditivo de machine learning** utilizando **XGBoost** para identificar alunos em risco de defasagem escolar, permitindo intervenção pedagógica preventiva com base em indicadores de desempenho.
 
-## 🚀 Características Principais
+## Características Principais
 
 ### Modelo Preditivo
 - **Algoritmo**: XGBoost (Gradient Boosting)
@@ -27,7 +27,7 @@ Desenvolver um **modelo preditivo de machine learning** utilizando **XGBoost** p
 - **Tema Claro**: Interface profissional e acessível
 - **Responsivo**: Funciona em desktop e mobile
 
-## 📋 Requisitos
+## Requisitos
 
 - Python 3.8+
 - Streamlit 1.30.0+
@@ -38,7 +38,7 @@ Desenvolver um **modelo preditivo de machine learning** utilizando **XGBoost** p
 - NumPy 1.24.0+
 - OpenPyXL 3.1.0+ (para leitura de arquivos Excel)
 
-## 🔧 Instalação
+## Instalação
 
 ### 1. Clone o repositório
 ```bash
@@ -69,7 +69,7 @@ RA, Ano ingresso, Pedra [ano anterior], IAA, IEG, IPS, IDA, IPV,
 IAN, INDE [ano], Nº Av, Pedra [ano atual], Defasagem/Defas
 ```
 
-## 🏃 Como Executar
+## Como Executar
 
 ```bash
 streamlit run app.py
@@ -77,7 +77,7 @@ streamlit run app.py
 
 A aplicação abrirá em `http://localhost:8501`
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 passos-magicos-app/
@@ -92,7 +92,7 @@ passos-magicos-app/
     └── base_2024.xlsx         # Dados PEDE 2024
 ```
 
-## 📊 Indicadores PEDE Utilizados
+## Indicadores PEDE Utilizados
 
 | Indicador | Descrição | Escala |
 |-----------|-----------|--------|
@@ -104,7 +104,7 @@ passos-magicos-app/
 | **IAN** | Índice de Aprendizagem Normalizado | 0 a 10 |
 | **INDE** | Índice de Desenvolvimento | 0 a 10 |
 
-## 🧠 Arquitetura do Modelo
+## Arquitetura do Modelo
 
 ### Pipeline de Treinamento
 
@@ -134,7 +134,7 @@ XGBClassifier(
 )
 ```
 
-## 📈 Métricas de Desempenho
+## Métricas de Desempenho
 
 | Métrica | Valor |
 |---------|-------|
@@ -156,7 +156,7 @@ Isso permite:
 - ✅ Intervenção **antes** que o problema aconteça
 - ✅ Eliminação completa de vazamento de dados
 
-## 🎨 Interface do Usuário
+## Interface do Usuário
 
 ### Página de Informações
 - Contexto do projeto
@@ -182,7 +182,7 @@ Isso permite:
 - Visualização em gráfico radar
 - Indicador de dados incompletos
 
-## 🛠️ Customização
+## Customização
 
 ### Alterar Cores da Paleta
 Edite as cores CSS no arquivo `app.py`:
@@ -201,7 +201,7 @@ Edite as cores CSS no arquivo `app.py`:
 ### Treinar com Novos Dados
 Simplesmente substitua os arquivos em `data/` e reinicie a aplicação. O modelo será retreinado automaticamente.
 
-## 📝 Notas Importantes
+## Notas Importantes
 
 - O modelo é retreinado **toda vez que a aplicação é iniciada** (cache com `@st.cache_resource`)
 - Os dados são carregados em cache para melhor performance
@@ -230,22 +230,22 @@ COPY . .
 CMD ["streamlit", "run", "app.py"]
 ```
 
-## 📚 Referências
+## Referências
 
 - [Documentação XGBoost](https://xgboost.readthedocs.io/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [Scikit-learn](https://scikit-learn.org/)
 - [Plotly](https://plotly.com/)
 
-## 👥 Equipe de Desenvolvimento
+## Equipe de Desenvolvimento
 
 Projeto desenvolvido como parte do **Tech Challenge 5** da Pós-Graduação em Data Analytics da **FIAP**, em parceria com a **Associação Passos Mágicos**.
 
-## 📄 Licença
+## Licença
 
 Este projeto é fornecido como está para fins educacionais.
 
-## 📞 Suporte
+## Suporte
 
 Para dúvidas ou sugestões, abra uma issue no repositório GitHub.
 
